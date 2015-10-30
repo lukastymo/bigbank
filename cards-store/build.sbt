@@ -1,16 +1,10 @@
 name := "cards-store"
 
-val scalaVer = "2.11.7"
-
-lazy val commonDependency = Seq(
-  "org.scalatest" %% "scalatest" % "2.2.1" % "test"
-)
+scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 lazy val commonSettings = Seq(
   organization := "lukastymo.bigbank.cardsstore",
-  version := "1.0.0",
-  scalaVersion := scalaVer,
-  libraryDependencies ++= commonDependency
+  version := "1.0.0"
 )
 
 lazy val `cards-store` = project.in(file("."))
