@@ -1,4 +1,4 @@
-package com.lukastymo
+package com.lukastymo.cardsstore
 
 import spray.routing.HttpService
 

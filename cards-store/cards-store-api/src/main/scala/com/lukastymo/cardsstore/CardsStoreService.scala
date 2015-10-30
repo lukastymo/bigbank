@@ -1,6 +1,6 @@
-package com.lukastymo
+package com.lukastymo.cardsstore
 
-import akka.actor.{Props, Actor}
+import akka.actor.{Actor, Props}
 
 class CardsStoreService extends Actor with CardsStoreRoutes {
   private val routes = {

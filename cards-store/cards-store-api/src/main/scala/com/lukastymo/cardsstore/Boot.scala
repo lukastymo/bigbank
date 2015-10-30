@@ -1,4 +1,4 @@
-package com.lukastymo
+package com.lukastymo.cardsstore
 
 import akka.actor.ActorSystem
 import akka.io.IO
