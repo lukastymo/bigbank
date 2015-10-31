@@ -1,6 +1,6 @@
 package com.lukastymo.cardsstore
 
-import spray.routing.{HttpService, Route}
+import spray.routing.HttpService
 
 import scala.concurrent.{ExecutionContext, Future}
 
