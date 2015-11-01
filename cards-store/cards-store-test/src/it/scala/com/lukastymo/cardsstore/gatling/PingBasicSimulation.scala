@@ -2,8 +2,9 @@ package com.lukastymo.cardsstore.gatling
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+import scala.concurrent.duration._
 
-class BasicSimulation extends Simulation {
+class PingBasicSimulation extends Simulation {
 
   val httpConf = http
     .baseURL("http://localhost:8081/cardsstore")
@@ -19,5 +20,9 @@ class BasicSimulation extends Simulation {
     .exec(http("request_1")
       .get("/ping"))
 
-  setUp(scn.inject(atOnceUsers(1)).protocols(httpConf))
+  setUp(
+    scn.inject(
+      rampUsers(1000) over(20 seconds)
+    ).protocols(httpConf)
+  )
 }
