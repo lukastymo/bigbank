@@ -7,5 +7,7 @@ val sprayV = "1.3.3"
 libraryDependencies ++= Seq(
   "io.spray"            %%  "spray-can"     % sprayV,
   "io.spray"            %%  "spray-routing" % sprayV,
-  "com.typesafe.akka"   %%  "akka-actor"    % akkaV
+  "com.typesafe.akka"   %%  "akka-actor"    % akkaV,
+  "org.scala-lang.modules" %% "scala-xml" % "1.0.4"
+
 )
